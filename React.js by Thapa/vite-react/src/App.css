@@ -1,42 +1,66 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  
+  
+  
+  height:100%;
+  width:100%;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-container{
+  list-style-type: none;
+  display:grid;
+  grid-template-columns: repeat(3,250px);
+  grid-auto-rows:370px;
+  column-gap:200px;
+  row-gap:50px;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container img{
+   width:250px;
+
+   display:flex;
+   flex-direction:column;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.dataContainer{
+  padding:10px;
+}
+.dataContainer div{
+  text-align:justify;
+  height:115px;
+}
+.button{
+  
+  background-color:blue;
+  color:white;
+ height:27px;
+ border:0;
+}
+.button:hover{
+  cursor:pointer;
+  text-decoration: underline;
+}
+.rating1{
+  background-color:blue;
+  color:white;
+  
 }
 
-.card {
-  padding: 2em;
+.rating2{
+   background-color:red;
+  color:white;
 }
-
-.read-the-docs {
-  color: #888;
+.rating{
+  padding:0px;
+  padding-left:  5px;
+  padding-right: 5px;
+  border-radius:10px;
 }

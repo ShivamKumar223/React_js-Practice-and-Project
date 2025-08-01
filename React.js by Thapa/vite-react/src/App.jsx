@@ -1,31 +1,36 @@
 // import React from "react";
- import {Fragment} from "react";
+//  import {Fragment} from "react";
+import "./App.css"
+import NetflixData from './data';
+
 function App() {
 
-  return (
-    <Fragment>
-    <Details/>
-    <Details/>
-    <Details/>
-    <Details/>
-    <Details/>
-  </Fragment>
-  )
+return(
+ <div> <h1>TV Show</h1>
+ < NetflixSearies/>
+ </div>
+)
 }
 
-const Details=()=>
-{
- return  <table border="1">
-      <thead>
-        <tr><td>Name</td><td>Shivam Kumar</td></tr>
-      </thead>
-      <tbody>
-        <tr><td>Course</td><td>B.Tech</td></tr>
-        <tr><td>Branch</td><td>Computer Science and Engineering</td></tr>
-        <tr><td>Roll No.</td><td>2200534</td></tr>
-        <tr><td>Age</td><td>21</td></tr>
-      </tbody>
-     </table>
+const NetflixSearies=()=>{
+ return( <ul className="grid-container">
+{ 
+  NetflixData.map((item)=>{
+    const class_name = item.rating >8?"rating1":"rating2";
+
+   return( <li className="container" >
+      <img src={item.image_url} alt="film image" />
+      <div className="dataContainer" >
+      <b>Name : {item.name}</b>
+      <p>Rating : <span className={`${class_name} rating`}>{item.rating}</span></p>
+      <div>Descriptinon : {item.description}</div>
+      <button className="button">Watch Now</button>
+      </div>
+    </li>)
+  })
+}
+  </ul>
+ )
 }
 
-export default App
+export default App;
