@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./time.css"
+
 export const HeadingWithDate=()=>{
  
     var [currentDateTime,setCurrentDateTime]=useState("");
