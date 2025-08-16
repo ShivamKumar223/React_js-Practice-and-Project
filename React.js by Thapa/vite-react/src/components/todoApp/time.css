@@ -11,3 +11,25 @@
 .HeadingWithDate h1{
     margin:0;
 }
+.FromButton{
+  display:flex;
+  justify-content: space-evenly;
+  align-items:center;
+  background-color: aqua;
+  padding:5px;
+
+}
+.FromButton input{
+  height:35px;
+  width:50%;
+  border-radius:10px;
+  padding-left:10px;
+}
+.FromButton button{
+  height:40px;
+  width:10%;
+  border-radius:10px;
+  cursor: pointer;
+  background-color: blue;
+  color:white;
+}
