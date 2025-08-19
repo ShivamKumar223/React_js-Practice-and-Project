@@ -33,3 +33,47 @@
   background-color: blue;
   color:white;
 }
+
+.list{
+   background-color: purple;
+   height:70vh;
+   overflow-y: scroll;
+   list-style-type: none;
+   border-radius: 10px;
+}
+.list li{
+  min-height:25px;
+  background-color: white;
+  margin:10px;
+  border-radius: 10px;
+  padding:5px;
+
+  display:flex;
+  align-items:center;
+}
+
+.list li p{
+  /* background-color: blanchedalmond; */
+  width:80%;
+  min-height:25px;
+  word-wrap:break-word;
+}
+.list li button{
+  width:7%;
+  height:40px;
+  margin-left:2%;
+}
+.checkBtn{
+  background-color: blue;
+  color:white;
+  font-size:25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.deleteBtn{
+  background-color: red;
+  color:white;
+  font-size:20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
