@@ -77,3 +77,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.checked {
+  text-decoration: line-through;
+}
+.notChecked{
+  text-decoration: none;
+}
